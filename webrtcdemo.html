@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>WebRTC demo</title>
+<link rel="stylesheet" type="text/css" href="css/webrtcdemo.css">
+</head>
+
+<body>
+
+<div class="container">
+<p>
+STOMP host: <input type="text" class="input_element" id="host" name="host"/>
+</p>
+<p>
+username: <input type="text" class="input_element" id="username" name="username"/>
+password: <input type="password" class="input_element" id="password" name="password"/>
+peer: <input type="text" class="input_element" id="peer" name="peer"/>
+</p>
+<p>
+<input type="button" id="btn_connect" name="btn_connect" value="Connect"/>
+<input type="button" id="btn_call" name="btn_call" value="Call"/>
+<span id="status-area">Status: <span id="status">Disconnected</span></span>
+</p>
+</div>
+
+<div class="container-bottom">
+
+<div id="remote">
+	<video width="30em" height="" id="remoteVideo" autoplay="autoplay" muted="true"/>
+</div>
+
+<div id="local">
+	<video id="localVideo" autoplay="autoplay">
+</div>
+</div>
+
+<div class="container">
+	<div id="footer">
+	</div>
+</div>
+
+<script src="js/adapter.js"></script>
+
+<script src="js/stomp.js"></script>
+<script src="js/stompchannel.js"></script>
+<script src="js/jquery-1.9.1.js"></script>
+<script type="text/JavaScript" src="js/webshmoozer.js"></script>
+<script type="text/JavaScript" src="js/webrtcdemo.js"></script>
+
+</body>
+</html>
+
